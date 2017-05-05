@@ -21,6 +21,6 @@ run:
         echo "formatting code"
         govendor fmt +local
     dirs:
-      /go/src/github.com/virtual-go/pscanary: srcDir
+      /go/src/github.com/golang-utils/pscanary: srcDir
     image: { ref: 'golang:1.8' }
-    workDir: /go/src/github.com/virtual-go/pscanary
+    workDir: /go/src/github.com/golang-utils/pscanary

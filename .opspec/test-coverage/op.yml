@@ -57,8 +57,8 @@ run:
           echo "Coverage ok"
         fi
     dirs:
-      /go/src/github.com/virtual-go/pscanary: srcDir
+      /go/src/github.com/golang-utils/pscanary: srcDir
     envVars:
       MINIMUM_COVERAGE: '85'
     image: { ref: 'golang:1.8' }
-    workDir: /go/src/github.com/virtual-go/pscanary
+    workDir: /go/src/github.com/golang-utils/pscanary

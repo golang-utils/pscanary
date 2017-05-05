@@ -1,9 +1,9 @@
 package pscanary
 
 import (
+	"github.com/golang-interfaces/vos"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/virtual-go/vos"
 	"os"
 )
 
@@ -11,7 +11,7 @@ var _ = Context("psCanary", func() {
 	Context("New", func() {
 		It("should return PsCanary", func() {
 			/* arrange/act/assert */
-			Expect(New(nil)).
+			Expect(New()).
 				Should(Not(BeNil()))
 		})
 	})
@@ -21,7 +21,7 @@ var _ = Context("psCanary", func() {
 				It("should return true", func() {
 					/* arrange */
 					objectUnderTest := _PsCanary{
-						os: vos.New(nil),
+						os: vos.New(),
 					}
 					expectedResult := true
 
@@ -41,7 +41,7 @@ var _ = Context("psCanary", func() {
 			It("should return false", func() {
 				/* arrange */
 				objectUnderTest := _PsCanary{
-					os: vos.New(nil),
+					os: vos.New(),
 				}
 				expectedResult := false
 

@@ -1,6 +1,6 @@
 package pscanary
 
-import "github.com/virtual-go/vos"
+import "github.com/golang-interfaces/vos"
 
 //go:generate counterfeiter -o ./fake.go --fake-name Fake ./ PsCanary
 
@@ -8,11 +8,9 @@ type PsCanary interface {
 	IsAlive(processId int) bool
 }
 
-func New(
-	os vos.VOS,
-) PsCanary {
+func New() PsCanary {
 	return _PsCanary{
-		os: os,
+		os: vos.New(),
 	}
 }
 
