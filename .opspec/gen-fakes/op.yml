@@ -18,11 +18,11 @@ run:
         echo "installing deps"
         go get github.com/kardianos/govendor \
         github.com/maxbrunsfeld/counterfeiter \
-        github.com/virtual-go/fs # hack until https://github.com/maxbrunsfeld/counterfeiter/issues/50 closed
+        github.com/golang-interfaces/fs # hack until https://github.com/maxbrunsfeld/counterfeiter/issues/50 closed
 
         echo "generating fakes"
         govendor generate +local
     dirs:
-      /go/src/github.com/virtual-go/pscanary: srcDir
+      /go/src/github.com/golang-utils/pscanary: srcDir
     image: { ref: 'golang:1.8' }
-    workDir: /go/src/github.com/virtual-go/pscanary
+    workDir: /go/src/github.com/golang-utils/pscanary

@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/virtual-go/pscanary.svg?branch=master)](https://travis-ci.org/virtual-go/pscanary)
-[![Coverage](https://codecov.io/gh/virtual-go/pscanary/branch/master/graph/badge.svg)](https://codecov.io/gh/virtual-go/pscanary)
+[![Build Status](https://travis-ci.org/golang-utils/pscanary.svg?branch=master)](https://travis-ci.org/golang-utils/pscanary)
+[![Coverage](https://codecov.io/gh/golang-utils/pscanary/branch/master/graph/badge.svg)](https://codecov.io/gh/golang-utils/pscanary)
 
 # problem statement
 
-process liveness checking package for virtual-go
+golang package for process liveness checking
 
 # features
 
@@ -19,7 +19,7 @@ process liveness checking package for virtual-go
 
 for every release:
 
-- source code will be [tagged](https://github.com/virtual-go/pscanary/tags).
+- source code will be [tagged](https://github.com/golang-utils/pscanary/tags).
 
 # Versioning
 

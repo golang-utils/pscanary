@@ -17,10 +17,11 @@ run:
       - |
         echo "installing deps"
         go get github.com/onsi/ginkgo/ginkgo
+        go get github.com/onsi/gomega
 
         echo "unit testing code"
         ginkgo --v -cover -race -r
     dirs:
-      /go/src/github.com/virtual-go/pscanary: srcDir
+      /go/src/github.com/golang-utils/pscanary: srcDir
     image: { ref: 'golang:1.8' }
-    workDir: /go/src/github.com/virtual-go/pscanary
+    workDir: /go/src/github.com/golang-utils/pscanary
