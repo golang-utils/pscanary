@@ -1,7 +1,7 @@
 package pscanary
 
 import (
-	"github.com/golang-interfaces/vos"
+	"github.com/golang-interfaces/ios"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"os"
@@ -21,7 +21,7 @@ var _ = Context("psCanary", func() {
 				It("should return true", func() {
 					/* arrange */
 					objectUnderTest := _PsCanary{
-						os: vos.New(),
+						os: ios.New(),
 					}
 					expectedResult := true
 
@@ -41,7 +41,7 @@ var _ = Context("psCanary", func() {
 			It("should return false", func() {
 				/* arrange */
 				objectUnderTest := _PsCanary{
-					os: vos.New(),
+					os: ios.New(),
 				}
 				expectedResult := false
 
